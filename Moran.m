@@ -51,4 +51,4 @@ function [Moran_I, Z_I] = Moran(y, Adj)
     EI = -1/(n - 1);
     VarI = (n*((n^2 - 3*n  + 3) * S1 - n * S2 + 3*S0)-k*((n^2 - n) * S1 - 2*n*S2 + 6*S0^2))/((n - 1)*(n - 2)*(n - 3)*S0^2) - EI^2;
 
-    Z_I = abs((Moran_I - EI)/sqrt(VarI));
+    Z_I = abs((Moran_I - EI)/sqrt(VarI)); 
